@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Com funciona - Ara què?">
+  <main class="pt-32 pb-20 bg-white">
+    <section class="max-w-5xl mx-auto px-6 mb-24">
+      <div class="text-center mb-12 space-y-4">
+        <h1
+          class="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 leading-tight"
+        >
+          Descobreix <span class="text-[#A7D6E9]">Ara què?</span>
+        </h1>
+        <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+          Mira com la nostra aplicació ajuda a millorar l'autonomia diària
+          mitjançant una interfície visual i intuïtiva.
+        </p>
+      </div>
+
+      <div
+        class="relative aspect-video w-full bg-white rounded-[2.5rem] shadow-2xl shadow-sky-100 border border-slate-100 overflow-hidden group"
+      >
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-slate-900/5 group-hover:bg-transparent transition-all z-20"
+        >
+          <div
+            class="w-20 h-20 bg-[#A7D6E9] text-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="w-8 h-8 ml-1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 italic"
+        >
+          Espai per al vídeo demostratiu del projecte
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16 space-y-3">
+        <h2
+          class="text-3xl font-black text-slate-900 uppercase tracking-tighter italic"
+        >
+          Funcionament Bàsic
+        </h2>
+        <div class="w-24 h-1.5 bg-[#F9C18A] mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-100/50 flex flex-col items-center border border-slate-100 transition-all hover:border-[#A7D6E9]/30"
+        >
+          <div
+            class="w-16 h-16 bg-[#A7D6E9]/10 rounded-2xl flex items-center justify-center mb-8"
+          >
+            <span class="text-2xl">🔑</span>
+          </div>
+          <h3 class="text-xl font-black text-slate-900 mb-4 text-center">
+            Accés senzill
+          </h3>
+          <p class="text-slate-500 text-sm text-center leading-relaxed mb-8">
+            Sistema d'entrada optimitzat per a usuaris i supervisors amb perfils
+            diferenciats.
+          </p>
+          <ul
+            class="w-full space-y-3 text-xs text-slate-500 border-t border-slate-50 pt-6"
+          >
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
+              Perfil personalitzat per a l'usuari
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
+              Panell de control per al tutor
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-100/50 flex flex-col items-center border border-slate-100 transition-all hover:border-[#F9C18A]/30"
+        >
+          <div
+            class="w-16 h-16 bg-[#F9C18A]/10 rounded-2xl flex items-center justify-center mb-8"
+          >
+            <span class="text-2xl">🖼️</span>
+          </div>
+          <h3 class="text-xl font-black text-slate-900 mb-4 text-center">
+            Guia Visual
+          </h3>
+          <p class="text-slate-500 text-sm text-center leading-relaxed mb-8">
+            Ús de pictogrames d'ARASAAC per facilitar la comprensió de cada
+            tasca.
+          </p>
+          <ul
+            class="w-full space-y-3 text-xs text-slate-500 border-t border-slate-50 pt-6"
+          >
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 bg-[#F9C18A] rounded-full"></span>
+              Imatges clares i estandarditzades
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 bg-[#F9C18A] rounded-full"></span>
+              Colors associats per categories
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-100/50 flex flex-col items-center border border-slate-100 transition-all hover:border-[#A7D6E9]/30"
+        >
+          <div
+            class="w-16 h-16 bg-[#A7D6E9]/10 rounded-2xl flex items-center justify-center mb-8"
+          >
+            <span class="text-2xl">👣</span>
+          </div>
+          <h3 class="text-xl font-black text-slate-900 mb-4 text-center">
+            Rutes guiades
+          </h3>
+          <p class="text-slate-500 text-sm text-center leading-relaxed mb-8">
+            Les rutines es divideixen en passes petites per no aclaparar
+            l'usuari.
+          </p>
+          <ul
+            class="w-full space-y-3 text-xs text-slate-500 border-t border-slate-50 pt-6"
+          >
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
+              Seqüències lògiques diàries
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
+              Confirmació de tasca feta
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

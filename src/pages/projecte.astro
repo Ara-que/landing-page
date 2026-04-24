@@ -1,0 +1,270 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="El Projecte - Ara què?">
+  <main class="pt-32 pb-20 bg-white">
+    <section class="max-w-6xl mx-auto px-6 mb-20 text-center">
+      <div
+        class="inline-block px-4 py-1.5 bg-[#A7D6E9] text-white rounded-full text-[10px] font-black tracking-[0.2em] uppercase mb-6 shadow-lg shadow-sky-100"
+      >
+        Arquitectura de Programari
+      </div>
+      <h1
+        class="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 mb-6 leading-[0.9]"
+      >
+        Sistemes <br /><span class="text-[#A7D6E9] italic">Desacoblats.</span>
+      </h1>
+      <p class="text-slate-500 max-w-3xl mx-auto text-xl leading-relaxed">
+        L'elecció de l'ecosistema s'ha basat en la <strong
+          >robustesa i modernitat</strong
+        >, assegurant un manteniment senzill per a l'autonomia de l'usuari.
+      </p>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 mb-32">
+      <div
+        class="bg-slate-900 rounded-[3rem] p-8 md:p-16 shadow-2xl shadow-sky-900/10 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-[#A7D6E9]/10 blur-[100px] rounded-full"
+        >
+        </div>
+
+        <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <h2 class="text-4xl font-black text-white tracking-tighter italic">
+              Backend amb <span class="text-[#A7D6E9]">Spring Boot</span>
+            </h2>
+            <p class="text-slate-400 leading-relaxed text-justify">
+              Hem desenvolupat el Backend sota una <strong
+                >Arquitectura de Microserveis</strong
+              >. Aquesta decisió permet desacoblar les funcionalitats: si una
+              part del sistema necessita créixer, ho pot fer de manera
+              independent.
+            </p>
+
+            <div class="space-y-4">
+              <div
+                class="flex gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 items-center"
+              >
+                <div
+                  class="w-12 h-12 bg-[#A7D6E9]/20 rounded-xl flex items-center justify-center text-2xl"
+                >
+                  🐳
+                </div>
+                <div>
+                  <h4 class="text-white font-bold text-sm">
+                    Virtualització amb Docker
+                  </h4>
+                  <p
+                    class="text-[11px] text-slate-400 uppercase tracking-wider"
+                  >
+                    Consistència d'entorns
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 items-center"
+              >
+                <div
+                  class="w-12 h-12 bg-[#F9C18A]/20 rounded-xl flex items-center justify-center text-2xl"
+                >
+                  📡
+                </div>
+                <div>
+                  <h4 class="text-white font-bold text-sm">
+                    Swagger (OpenAPI)
+                  </h4>
+                  <p
+                    class="text-[11px] text-slate-400 uppercase tracking-wider"
+                  >
+                    Documentació Interactiva
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div
+              class="aspect-square bg-[#A7D6E9] rounded-3xl flex flex-col items-center justify-center text-white p-6 text-center shadow-xl"
+            >
+              <span class="text-3xl mb-2">👤</span>
+              <span class="text-[10px] font-black uppercase tracking-widest"
+                >Auth Service</span
+              >
+            </div>
+            <div
+              class="aspect-square bg-slate-800 rounded-3xl flex flex-col items-center justify-center text-white p-6 text-center border border-white/10"
+            >
+              <span class="text-3xl mb-2">📋</span>
+              <span class="text-[10px] font-black uppercase tracking-widest"
+                >Routine Service</span
+              >
+            </div>
+            <div
+              class="aspect-square bg-slate-800 rounded-3xl flex flex-col items-center justify-center text-white p-6 text-center border border-white/10"
+            >
+              <span class="text-3xl mb-2">💎</span>
+              <span class="text-[10px] font-black uppercase tracking-widest"
+                >Reward Service</span
+              >
+            </div>
+            <div
+              class="aspect-square bg-[#F9C18A] rounded-3xl flex flex-col items-center justify-center text-white p-6 text-center shadow-xl"
+            >
+              <span class="text-3xl mb-2">💾</span>
+              <span class="text-[10px] font-black uppercase tracking-widest"
+                >PostgreSQL DB</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 mb-32 grid md:grid-cols-2 gap-12">
+      <div
+        class="bg-white p-10 rounded-[3rem] shadow-xl shadow-slate-100 border border-slate-100 flex flex-col items-center text-center"
+      >
+        <div
+          class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center p-4 mb-8"
+        >
+          <img
+            src="/landing-page/images/logos/jooq-black-logo.png"
+            alt="jOOQ logo"
+            class="w-full h-auto object-contain opacity-80"
+          />
+        </div>
+        <h3
+          class="text-2xl font-black text-slate-900 tracking-tighter mb-4 italic"
+        >
+          Persistència amb jOOQ
+        </h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-8">
+          Consultes SQL tipades directament en Java. Predictibilitat total i
+          detecció d'errors en temps de compilació.
+        </p>
+        <span
+          class="mt-auto px-4 py-1 bg-[#A7D6E9]/10 text-[#7FB3CC] rounded-full text-[10px] font-black uppercase tracking-widest"
+          >Type-Safe SQL</span
+        >
+      </div>
+
+      <div
+        class="bg-white p-10 rounded-[3rem] shadow-xl shadow-slate-100 border border-slate-100 flex flex-col items-center text-center"
+      >
+        <div
+          class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center p-4 mb-8"
+        >
+          <img
+            src="/landing-page/images/logos/postgres-logo.png"
+            alt="PostgreSQL logo"
+            class="w-full h-auto object-contain"
+          />
+        </div>
+        <h3
+          class="text-2xl font-black text-slate-900 tracking-tighter mb-4 italic"
+        >
+          PostgreSQL
+        </h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-8">
+          Gestió de relacions complexes i ramificacions de rutines amb una
+          integritat referencial absoluta.
+        </p>
+        <span
+          class="mt-auto px-4 py-1 bg-[#F9C18A]/10 text-[#E69B55] rounded-full text-[10px] font-black uppercase tracking-widest"
+          >Relational DB</span
+        >
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 space-y-32">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+          <div>
+            <h2
+              class="text-4xl font-black tracking-tighter text-slate-900 italic mb-4"
+            >
+              Jetpack Compose
+            </h2>
+            <p class="text-slate-600 leading-relaxed text-justify">
+              UI declarativa i reactiva en <strong>Kotlin</strong>. Dissenyat
+              per ser altament accessible i fluid per a l'usuari final.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-white rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-100/50 flex items-center gap-6 group hover:border-[#A7D6E9] transition-colors"
+          >
+            <div
+              class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center p-3 shadow-lg"
+            >
+              <img
+                src="/landing-page/images/logos/github-logo.png"
+                alt="GitHub"
+                class="w-full h-auto brightness-0 invert"
+              />
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900">GitHub Projects</h5>
+              <p
+                class="text-[11px] text-[#A7D6E9] uppercase tracking-widest font-black mb-1"
+              >
+                Metodologia Àgil
+              </p>
+              <p class="text-xs text-slate-400 italic">
+                Taulers Kanban per al seguiment de tasques.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-slate-900 rounded-[2.5rem] p-2 shadow-2xl border border-slate-800"
+        >
+          <div
+            class="px-6 py-3 flex items-center gap-2 border-b border-slate-800"
+          >
+            <div class="flex gap-1">
+              <div class="w-1.5 h-1.5 rounded-full bg-rose-500"></div>
+              <div class="w-1.5 h-1.5 rounded-full bg-[#F9C18A]"></div>
+              <div class="w-1.5 h-1.5 rounded-full bg-[#A7D6E9]"></div>
+            </div>
+            <span
+              class="text-[9px] font-mono text-slate-500 ml-4 uppercase tracking-widest italic"
+              >Android Studio — Structure</span
+            >
+          </div>
+          <img
+            src="/landing-page/images/diagrams/arquitectura.png"
+            alt="Arquitectura"
+            class="max-w-[85%] h-auto mx-auto p-6 block"
+          />
+        </div>
+      </div>
+
+      <div class="space-y-12 pb-20">
+        <div class="text-center">
+          <h2
+            class="text-4xl font-black tracking-tighter text-slate-900 italic mb-2"
+          >
+            Model d'Entitat-Relació
+          </h2>
+          <div class="w-24 h-1 bg-[#F9C18A] mx-auto rounded-full opacity-50">
+          </div>
+        </div>
+        <div
+          class="max-w-4xl mx-auto bg-white p-8 rounded-[3.5rem] shadow-2xl border border-slate-50"
+        >
+          <img
+            src="/landing-page/images/diagrams/db-schema.png"
+            alt="Model BD"
+            class="w-full h-auto rounded-3xl"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

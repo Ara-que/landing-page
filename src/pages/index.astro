@@ -1,0 +1,117 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Ara què? - Guia Emocional">
+  <main class="pt-32 pb-20 overflow-x-hidden bg-white">
+    <section
+      class="max-w-5xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center"
+    >
+      <div class="space-y-10 text-center lg:text-left relative">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 bg-[#F9C18A]/10 border border-[#F9C18A]/30 rounded-full"
+        >
+          <span class="relative flex h-2 w-2">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F9C18A] opacity-75"
+            ></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#F9C18A]"
+            ></span>
+          </span>
+          <span class="text-xs font-bold text-[#e69b55] tracking-wide uppercase"
+            >Projecte Educatiu 2026</span
+          >
+        </div>
+
+        <h1
+          class="text-7xl md:text-[85px] font-black text-slate-900 leading-[0.85] tracking-tighter"
+        >
+          Ara Què<span class="text-[#A7D6E9]">?</span><br />
+          <span
+            class="text-[#F9C18A] font-medium text-4xl md:text-5xl block mt-4 tracking-tight"
+          >
+            Construint el camí cap a la teva autonomia.
+          </span>
+        </h1>
+
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+          <a
+            href="landing-page/projecte"
+            class="bg-[#A7D6E9] text-white px-10 py-4 rounded-2xl font-bold shadow-xl shadow-sky-100 hover:bg-[#92c5db] hover:-translate-y-1 transition-all"
+          >
+            Descobreix el projecte
+          </a>
+          <a
+            href="landing-page/com-funciona"
+            class="bg-white text-slate-500 border border-slate-200 px-10 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all"
+          >
+            Com funciona?
+          </a>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center lg:justify-end group">
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-sky-100/50 blur-[120px] rounded-full"
+        >
+        </div>
+
+        <div
+          class="relative w-[290px] h-[620px] bg-slate-950 rounded-[3.5rem] border-[10px] border-slate-950 shadow-2xl overflow-hidden ring-1 ring-white/10"
+        >
+          <div class="absolute inset-0 z-10">
+            <img
+              src="/landing-page/images/mockup-app.png"
+              alt="App Ara Què"
+              class="w-full h-full object-contain bg-[#fdfaf3]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="max-w-5xl mx-auto px-6 py-32 mt-20 border-t border-slate-100"
+    >
+      <div class="grid md:grid-cols-3 gap-16">
+        <div class="space-y-4">
+          <h3
+            class="text-xl font-black text-[#A7D6E9] uppercase tracking-[0.2em]"
+          >
+            La Solució
+          </h3>
+          <p class="text-lg text-slate-500 leading-relaxed">
+            <strong class="text-slate-900">Ara què?</strong> és una solució tecnològica
+            inclusiva dissenyada per millorar l'autonomia de persones amb TEA mitjançant
+            rutines visuals.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3
+            class="text-xl font-black text-[#F9C18A] uppercase tracking-[0.2em]"
+          >
+            Motivació
+          </h3>
+          <p class="text-lg text-slate-500 leading-relaxed">
+            Integra la <strong class="text-slate-900">gamificació</strong>:
+            recompenses digitals que fomenten la independència i el seguiment
+            del progrés.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3
+            class="text-xl font-black text-[#A7D6E9] uppercase tracking-[0.2em]"
+          >
+            Impacte Social
+          </h3>
+          <p class="text-lg text-slate-500 leading-relaxed">
+            Reduïm l'ansietat davant la incertesa quotidiana, facilitant una
+            <strong class="text-slate-900">inclusió social</strong> real i efectiva.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

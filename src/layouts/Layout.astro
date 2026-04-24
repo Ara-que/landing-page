@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/landing-page/images/logos/araque-logo.png"
+    />
+    <title>Ara què? - Guia Emocional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-50">
+    <nav
+      class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <a href="/landing-page/">
+          <img
+            src="/landing-page/images/logos/araque-logo.png"
+            alt="Logo Ara Què"
+            class="h-16 w-auto"
+          />
+        </a>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+          <a href="/landing-page/" class="hover:text-blue-600 transition"
+            >Inici</a
+          >
+          <a
+            href="/landing-page/com-funciona"
+            class="hover:text-blue-600 transition">Com funciona</a
+          >
+          <a
+            href="/landing-page/projecte"
+            class="hover:text-blue-600 transition">El Projecte</a
+          >
+          <a
+            href="/landing-page/model-negoci"
+            class="hover:text-blue-600 transition">Model de Negoci</a
+          >
+          <a href="/landing-page/equip" class="hover:text-blue-600 transition"
+            >Equip</a
+          >
+        </div>
+        <div class="flex gap-2 text-xs font-bold text-slate-400">
+          <span class="text-blue-600">CA</span> | <span>ES</span> | <span
+            >EN</span
+          >
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer class="bg-slate-900 text-white py-12 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <p>© 2026 - Projecte Ara què?</p>
+      </div>
+    </footer>
+  </body>
+</html>
