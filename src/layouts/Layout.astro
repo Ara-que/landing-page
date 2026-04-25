@@ -29,6 +29,7 @@ import "../styles/global.css";
             class="h-16 w-auto"
           />
         </a>
+
         <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
           <a href="/landing-page/" class="hover:text-blue-600 transition"
             >Inici</a
@@ -49,14 +50,43 @@ import "../styles/global.css";
             >Equip</a
           >
         </div>
-        <div class="flex gap-2 text-xs font-bold text-slate-400">
-          <span class="text-blue-600">CA</span> | <span>ES</span> | <span
-            >EN</span
-          >
+
+        <div class="flex items-center gap-4">
+          <div class="flex gap-2 text-xs font-bold text-slate-400">
+            <span class="text-blue-600">CA</span> | <span>ES</span> | <span
+              >EN</span
+            >
+          </div>
+
+          <button id="menu-btn" class="md:hidden text-slate-600">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path></svg
+            >
+          </button>
         </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden bg-white border-b border-slate-100 flex flex-col p-6 gap-4 md:hidden text-sm font-medium text-slate-600"
+      >
+        <a href="/landing-page/">Inici</a>
+        <a href="/landing-page/com-funciona">Com funciona</a>
+        <a href="/landing-page/projecte">El Projecte</a>
+        <a href="/landing-page/model-negoci">Model de Negoci</a>
+        <a href="/landing-page/equip">Equip</a>
       </div>
     </nav>
 
+    <div class="h-16"></div>
     <slot />
 
     <footer class="bg-slate-900 text-white py-12 px-6">
@@ -64,5 +94,11 @@ import "../styles/global.css";
         <p>© 2026 - Projecte Ara què?</p>
       </div>
     </footer>
+
+    <script is:inline>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      btn?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+    </script>
   </body>
 </html>

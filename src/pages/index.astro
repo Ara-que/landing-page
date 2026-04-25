@@ -3,115 +3,193 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Ara què? - Guia Emocional">
-  <main class="pt-32 pb-20 overflow-x-hidden bg-white">
-    <section
-      class="max-w-5xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center"
-    >
-      <div class="space-y-10 text-center lg:text-left relative">
+  <main class="overflow-x-hidden bg-white">
+    <section class="relative pt-32 pb-20 lg:pt-16 lg:pb-32">
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-50"
+      >
         <div
-          class="inline-flex items-center gap-2 px-4 py-2 bg-[#F9C18A]/10 border border-[#F9C18A]/30 rounded-full"
+          class="absolute top-20 left-10 w-72 h-72 bg-[#A7D6E9]/30 blur-[100px] rounded-full"
         >
-          <span class="relative flex h-2 w-2">
-            <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F9C18A] opacity-75"
-            ></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#F9C18A]"
-            ></span>
-          </span>
-          <span class="text-xs font-bold text-[#e69b55] tracking-wide uppercase"
-            >Projecte Educatiu 2026</span
-          >
         </div>
-
-        <h1
-          class="text-7xl md:text-[85px] font-black text-slate-900 leading-[0.85] tracking-tighter"
+        <div
+          class="absolute bottom-10 right-10 w-96 h-96 bg-[#F9C18A]/20 blur-[120px] rounded-full"
         >
-          Ara Què<span class="text-[#A7D6E9]">?</span><br />
-          <span
-            class="text-[#F9C18A] font-medium text-4xl md:text-5xl block mt-4 tracking-tight"
-          >
-            Construint el camí cap a la teva autonomia.
-          </span>
-        </h1>
-
-        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-          <a
-            href="/landing-page/projecte"
-            class="bg-[#A7D6E9] text-white px-10 py-4 rounded-2xl font-bold shadow-xl shadow-sky-100 hover:bg-[#92c5db] hover:-translate-y-1 transition-all"
-          >
-            Descobreix el projecte
-          </a>
-          <a
-            href="/landing-page/com-funciona"
-            class="bg-white text-slate-500 border border-slate-200 px-10 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all"
-          >
-            Com funciona?
-          </a>
         </div>
       </div>
 
-      <div class="relative flex justify-center lg:justify-end group">
-        <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-sky-100/50 blur-[120px] rounded-full"
-        >
+      <div
+        class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <div class="space-y-8 text-center lg:text-left">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 bg-[#F9C18A]/10 border border-[#F9C18A]/20 rounded-full"
+          >
+            <span
+              class="text-xs font-bold text-[#e69b55] tracking-widest uppercase"
+              >Projecte Educatiu 2026</span
+            >
+          </div>
+
+          <h1
+            class="text-6xl md:text-8xl font-black text-slate-900 leading-[0.9] tracking-tighter"
+          >
+            Ara Què<span class="text-[#A7D6E9]">?</span><br />
+            <span
+              class="text-[#F9C18A] font-semibold text-3xl md:text-5xl block mt-6 tracking-tight"
+            >
+              Construint el camí cap a la teva autonomia.
+            </span>
+          </h1>
+
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <a
+              href="/landing-page/projecte"
+              class="bg-[#A7D6E9] text-white px-6 py-4 rounded-2xl font-bold shadow-lg hover:bg-[#8ec1d6] transition-all text-sm"
+            >
+              Descobreix el projecte
+            </a>
+            <a
+              href="/landing-page/com-funciona"
+              class="bg-white text-slate-600 border-2 border-slate-100 px-6 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all text-sm"
+            >
+              Com funciona?
+            </a>
+            <a
+              href="#descarrega"
+              class="bg-slate-900 text-white px-6 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all text-sm flex items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                ></path>
+              </svg>
+              Baixar APK
+            </a>
+          </div>
         </div>
 
-        <div
-          class="relative w-[290px] h-[620px] bg-slate-950 rounded-[3.5rem] border-[10px] border-slate-950 shadow-2xl overflow-hidden ring-1 ring-white/10"
-        >
-          <div class="absolute inset-0 z-10">
-            <img
-              src="/landing-page/images/mockup-app.png"
-              alt="App Ara Què"
-              class="w-full h-full object-contain bg-[#fdfaf3]"
-            />
+        <div class="relative flex justify-center lg:justify-end">
+          <div class="relative w-[280px] md:w-[320px]">
+            <div
+              class="absolute -inset-4 bg-gradient-to-tr from-[#A7D6E9] to-[#F9C18A] rounded-[3.5rem] blur-2xl opacity-20"
+            >
+            </div>
+            <div
+              class="relative bg-slate-950 rounded-[3rem] border-[8px] border-slate-900 shadow-2xl overflow-hidden aspect-[9/19.5]"
+            >
+              <img
+                src="/landing-page/images/mockup-app.png"
+                alt="App Ara Què"
+                class="w-full h-full object-cover bg-[#fdfaf3]"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section
-      class="max-w-5xl mx-auto px-6 py-32 mt-20 border-t border-slate-100"
-    >
-      <div class="grid md:grid-cols-3 gap-16">
-        <div class="space-y-4">
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-1.5 rounded-full mb-6 bg-[#A7D6E9]"></div>
           <h3
-            class="text-xl font-black text-[#A7D6E9] uppercase tracking-[0.2em]"
+            class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-widest"
           >
             La Solució
           </h3>
-          <p class="text-lg text-slate-500 leading-relaxed">
-            <strong class="text-slate-900">Ara què?</strong> és una solució tecnològica
-            inclusiva dissenyada per millorar l'autonomia de persones amb TEA mitjançant
+          <p class="text-slate-500 leading-relaxed text-sm">
+            Dissenyada per millorar l'autonomia de persones amb TEA mitjançant
             rutines visuals.
           </p>
         </div>
-
-        <div class="space-y-4">
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-1.5 rounded-full mb-6 bg-[#F9C18A]"></div>
           <h3
-            class="text-xl font-black text-[#F9C18A] uppercase tracking-[0.2em]"
+            class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-widest"
           >
             Motivació
           </h3>
-          <p class="text-lg text-slate-500 leading-relaxed">
-            Integra la <strong class="text-slate-900">gamificació</strong>:
-            recompenses digitals que fomenten la independència i el seguiment
-            del progrés.
+          <p class="text-slate-500 leading-relaxed text-sm">
+            Integra la gamificació: recompenses digitals que fomenten la
+            independència.
           </p>
         </div>
-
-        <div class="space-y-4">
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-1.5 rounded-full mb-6 bg-[#A7D6E9]"></div>
           <h3
-            class="text-xl font-black text-[#A7D6E9] uppercase tracking-[0.2em]"
+            class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-widest"
           >
             Impacte Social
           </h3>
-          <p class="text-lg text-slate-500 leading-relaxed">
-            Reduïm l'ansietat davant la incertesa quotidiana, facilitant una
-            <strong class="text-slate-900">inclusió social</strong> real i efectiva.
+          <p class="text-slate-500 leading-relaxed text-sm">
+            Reduïm l'ansietat, facilitant una inclusió social real i efectiva.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="descarrega" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-6">
+        <div
+          class="bg-slate-900 rounded-[2.5rem] p-12 text-center relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-[#A7D6E9] opacity-10 blur-3xl rounded-full"
+          >
+          </div>
+
+          <div class="relative z-10">
+            <h2 class="text-3xl md:text-5xl font-black text-white mb-10">
+              Baixa l'App oficial
+            </h2>
+
+            <a
+              href="/landing-page/downloads/ara-que.apk"
+              download="AraQue.apk"
+              class="inline-flex items-center gap-4 bg-[#F9C18A] text-slate-900 px-12 py-5 rounded-2xl font-black text-xl hover:bg-white hover:scale-105 transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                ></path>
+              </svg>
+              <span>DESCARREGAR APK</span>
+            </a>
+
+            <div
+              class="mt-8 flex justify-center items-center gap-3 text-slate-500 text-xs font-bold uppercase tracking-widest"
+            >
+              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+              Disponible per a Android
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
