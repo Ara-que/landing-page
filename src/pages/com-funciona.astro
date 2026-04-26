@@ -18,31 +18,15 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div
-        class="relative aspect-video w-full bg-white rounded-[2.5rem] shadow-2xl shadow-sky-100 border border-slate-100 overflow-hidden group"
+        class="relative aspect-video w-full rounded-[2.5rem] shadow-2xl shadow-sky-100 border-8 border-white overflow-hidden"
       >
-        <div
-          class="absolute inset-0 flex items-center justify-center bg-slate-900/5 group-hover:bg-transparent transition-all z-20"
-        >
-          <div
-            class="w-20 h-20 bg-[#A7D6E9] text-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform cursor-pointer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="w-8 h-8 ml-1"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <div
-          class="w-full h-full bg-slate-50 flex items-center justify-center text-slate-400 italic"
-        >
-          Espai per al vídeo demostratiu del projecte
-        </div>
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/B9QfVKaB4NQ"
+          title="Ara Què? Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </section>
 
@@ -75,11 +59,11 @@ import Layout from "../layouts/Layout.astro";
           <ul
             class="w-full space-y-3 text-xs text-slate-500 border-t border-slate-50 pt-6"
           >
-            <li class="flex items-center gap-3">
+            <li class="flex items-center gap-3 italic">
               <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
               Perfil personalitzat per a l'usuari
             </li>
-            <li class="flex items-center gap-3">
+            <li class="flex items-center gap-3 italic">
               <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
               Panell de control per al tutor
             </li>
@@ -104,11 +88,11 @@ import Layout from "../layouts/Layout.astro";
           <ul
             class="w-full space-y-3 text-xs text-slate-500 border-t border-slate-50 pt-6"
           >
-            <li class="flex items-center gap-3">
+            <li class="flex items-center gap-3 italic">
               <span class="w-1.5 h-1.5 bg-[#F9C18A] rounded-full"></span>
               Imatges clares i estandarditzades
             </li>
-            <li class="flex items-center gap-3">
+            <li class="flex items-center gap-3 italic">
               <span class="w-1.5 h-1.5 bg-[#F9C18A] rounded-full"></span>
               Colors associats per categories
             </li>
@@ -133,11 +117,11 @@ import Layout from "../layouts/Layout.astro";
           <ul
             class="w-full space-y-3 text-xs text-slate-500 border-t border-slate-50 pt-6"
           >
-            <li class="flex items-center gap-3">
+            <li class="flex items-center gap-3 italic">
               <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
               Seqüències lògiques diàries
             </li>
-            <li class="flex items-center gap-3">
+            <li class="flex items-center gap-3 italic">
               <span class="w-1.5 h-1.5 bg-[#A7D6E9] rounded-full"></span>
               Confirmació de tasca feta
             </li>
